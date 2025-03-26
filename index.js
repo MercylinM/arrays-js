@@ -23,20 +23,23 @@ console.log({sortedItems});
 let arr = ["boy", "man", "girl", "school", "girl", "woman"];
 
 let duplicatesItems = [];
+duplicatesItems = arr.filter((item, index) => arr.indexOf(item) !== index);
 console.log({duplicatesItems});
 
 
 // Question 5
 let arr5 = ["the", "way", "x", 4];
+let searchWord = "food";
 
+arr5.includes(searchWord) ? console.log({ searchWord }) : console.log("the search word was not found");
 
 
 // Question 6
 let word = "renniw"
-let sortedString = word.split();
+
+let sortedString = word.split("").sort().join("");
 console.log({sortedString});
-let newWord = sortedString.sort();
-console.log({newWord})
+
 
 
 // Question 7
